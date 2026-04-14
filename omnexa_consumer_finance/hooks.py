@@ -1,5 +1,5 @@
 app_name = "omnexa_consumer_finance"
-app_title = "Omnexa Consumer Finance"
+app_title = "ErpGenEx — Consumer Finance"
 app_publisher = "Omnexa"
 app_description = "Consumer finance vertical"
 app_email = "dev@omnexa.com"
