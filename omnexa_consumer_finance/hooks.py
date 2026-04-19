@@ -247,3 +247,18 @@ before_request = ["omnexa_consumer_finance.license_gate.before_request"]
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+after_migrate = [
+	"omnexa_consumer_finance.governance_setup.after_migrate",
+	"omnexa_consumer_finance.workspace_enhancer.after_migrate",
+]
+
+permission_query_conditions = {
+	"Consumer Finance Policy Version": "omnexa_consumer_finance.governance_permissions.policy_query_conditions",
+	"Consumer Finance Audit Snapshot": "omnexa_consumer_finance.governance_permissions.snapshot_query_conditions",
+}
+
+has_permission = {
+	"Consumer Finance Policy Version": "omnexa_consumer_finance.governance_permissions.policy_has_permission",
+	"Consumer Finance Audit Snapshot": "omnexa_consumer_finance.governance_permissions.snapshot_has_permission",
+}

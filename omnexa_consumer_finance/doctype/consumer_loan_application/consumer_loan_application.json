@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "country_code",
+  "application_channel",
+  "principal",
+  "term_months",
+  "application_status",
+  "credit_score",
+  "dti_ratio",
+  "existing_exposure"
+ ],
+ "fields": [
+  {"fieldname":"customer_name","fieldtype":"Data","label":"Customer Name","reqd":1},
+  {"fieldname":"country_code","fieldtype":"Data","label":"Country Code","default":"INTL"},
+  {"fieldname":"application_channel","fieldtype":"Select","label":"Application Channel","options":"WEB\nMOBILE\nBRANCH","default":"BRANCH"},
+  {"fieldname":"principal","fieldtype":"Currency","label":"Principal","reqd":1},
+  {"fieldname":"term_months","fieldtype":"Int","label":"Term Months","reqd":1},
+  {"fieldname":"application_status","fieldtype":"Select","label":"Application Status","options":"SUBMITTED\nASSESSED\nAPPROVED\nREJECTED","default":"SUBMITTED"},
+  {"fieldname":"credit_score","fieldtype":"Int","label":"Credit Score"},
+  {"fieldname":"dti_ratio","fieldtype":"Percent","label":"DTI Ratio"},
+  {"fieldname":"existing_exposure","fieldtype":"Currency","label":"Existing Exposure","default":"0"}
+ ],
+ "index_web_pages_for_search": 1,
+ "module": "Omnexa Consumer Finance",
+ "name": "Consumer Loan Application",
+ "permissions": [
+  {"role":"System Manager","read":1,"write":1,"create":1,"delete":1,"print":1,"email":1,"export":1,"report":1,"share":1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
+

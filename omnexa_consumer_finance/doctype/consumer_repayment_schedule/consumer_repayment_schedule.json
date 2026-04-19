@@ -1,0 +1,33 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case_id",
+  "installment_no",
+  "due_date",
+  "due_amount",
+  "paid_amount",
+  "status"
+ ],
+ "fields": [
+  {"fieldname":"case_id","fieldtype":"Link","label":"Case ID","options":"Consumer Finance Case","reqd":1},
+  {"fieldname":"installment_no","fieldtype":"Int","label":"Installment No","reqd":1},
+  {"fieldname":"due_date","fieldtype":"Date","label":"Due Date","reqd":1},
+  {"fieldname":"due_amount","fieldtype":"Currency","label":"Due Amount","reqd":1},
+  {"fieldname":"paid_amount","fieldtype":"Currency","label":"Paid Amount","default":"0"},
+  {"fieldname":"status","fieldtype":"Select","label":"Status","options":"DUE\nPAID\nOVERDUE\nRESTRUCTURED","default":"DUE"}
+ ],
+ "index_web_pages_for_search": 1,
+ "module": "Omnexa Consumer Finance",
+ "name": "Consumer Repayment Schedule",
+ "permissions": [
+  {"role":"System Manager","read":1,"write":1,"create":1,"delete":1,"print":1,"email":1,"export":1,"report":1,"share":1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
+
