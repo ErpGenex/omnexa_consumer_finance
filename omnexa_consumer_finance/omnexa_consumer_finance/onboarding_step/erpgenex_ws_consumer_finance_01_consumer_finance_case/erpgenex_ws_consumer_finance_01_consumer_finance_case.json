@@ -1,0 +1,21 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create",
+ "creation": "2026-04-20 00:31:40.032287",
+ "description": "Create or review your first **Consumer Finance Case** record from this workspace.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2026-04-20 02:24:44.564000",
+ "modified_by": "Administrator",
+ "name": "ERPGENEX-WS-consumer_finance-01-consumer_finance_case",
+ "owner": "Administrator",
+ "reference_document": "Consumer Finance Case",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Get started with Consumer Finance Case",
+ "validate_action": 1
+}

@@ -1,0 +1,41 @@
+{
+ "allow_roles": [
+  {
+   "role": "Desk User"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "creation": "2026-04-20 00:31:40.065715",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "https://frappe.io/framework",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2026-04-20 02:24:44.600206",
+ "modified_by": "Administrator",
+ "module": "Omnexa Consumer Finance",
+ "name": "ERPGENEX \u2014 Consumer Finance",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "ERPGENEX-WS-consumer_finance-01-consumer_finance_case"
+  },
+  {
+   "step": "ERPGENEX-WS-consumer_finance-02-consumer_repayment_schedule"
+  },
+  {
+   "step": "ERPGENEX-WS-consumer_finance-03-report-consumer_par_monitor"
+  },
+  {
+   "step": "ERPGENEX-WS-consumer_finance-04-report-consumer_npl_summary"
+  },
+  {
+   "step": "ERPGENEX-WS-consumer_finance-home"
+  }
+ ],
+ "subtitle": "Guided setup for this workspace.",
+ "success_message": "You are ready to work in Consumer Finance.",
+ "title": "ERPGENEX \u00b7 Consumer Finance"
+}
