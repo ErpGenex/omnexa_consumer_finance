@@ -5,15 +5,26 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "identity_section",
   "process_name",
   "policy_ref",
   "actor",
   "created_at",
+  "snapshot_section",
   "snapshot_hash",
   "inputs_json",
-  "outputs_json"
+  "outputs_json",
+  "governance_section",
+  "change_ticket",
+  "control_section",
+  "snapshot_reference"
  ],
  "fields": [
+  {
+   "fieldname": "identity_section",
+   "fieldtype": "Section Break",
+   "label": "Snapshot Identity"
+  },
   {
    "fieldname": "process_name",
    "fieldtype": "Data",
@@ -40,6 +51,11 @@
    "in_list_view": 1
   },
   {
+   "fieldname": "snapshot_section",
+   "fieldtype": "Section Break",
+   "label": "Snapshot Data"
+  },
+  {
    "fieldname": "snapshot_hash",
    "fieldtype": "Data",
    "label": "Snapshot Hash",
@@ -57,6 +73,26 @@
    "fieldtype": "Long Text",
    "label": "Outputs JSON",
    "reqd": 1
+  },
+  {
+   "fieldname": "governance_section",
+   "fieldtype": "Section Break",
+   "label": "Governance"
+  },
+  {
+   "fieldname": "change_ticket",
+   "fieldtype": "Data",
+   "label": "Change Ticket"
+  },
+  {
+   "fieldname": "control_section",
+   "fieldtype": "Section Break",
+   "label": "Control"
+  },
+  {
+   "fieldname": "snapshot_reference",
+   "fieldtype": "Data",
+   "label": "Snapshot Reference"
   }
  ],
  "index_web_pages_for_search": 1,

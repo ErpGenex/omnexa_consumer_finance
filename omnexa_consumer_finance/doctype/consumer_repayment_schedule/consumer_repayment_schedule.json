@@ -5,20 +5,28 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "identity_section",
   "case_id",
   "installment_no",
+  "schedule_section",
   "due_date",
   "due_amount",
   "paid_amount",
-  "status"
+  "status",
+  "control_section",
+  "payment_reference"
  ],
  "fields": [
+  {"fieldname":"identity_section","fieldtype":"Section Break","label":"Installment Identity"},
   {"fieldname":"case_id","fieldtype":"Link","label":"Case ID","options":"Consumer Finance Case","reqd":1},
   {"fieldname":"installment_no","fieldtype":"Int","label":"Installment No","reqd":1},
+  {"fieldname":"schedule_section","fieldtype":"Section Break","label":"Schedule and Amount"},
   {"fieldname":"due_date","fieldtype":"Date","label":"Due Date","reqd":1},
   {"fieldname":"due_amount","fieldtype":"Currency","label":"Due Amount","reqd":1},
   {"fieldname":"paid_amount","fieldtype":"Currency","label":"Paid Amount","default":"0"},
-  {"fieldname":"status","fieldtype":"Select","label":"Status","options":"DUE\nPAID\nOVERDUE\nRESTRUCTURED","default":"DUE"}
+  {"fieldname":"status","fieldtype":"Select","label":"Status","options":"DUE\nPAID\nOVERDUE\nRESTRUCTURED","default":"DUE"},
+  {"fieldname":"control_section","fieldtype":"Section Break","label":"Control"},
+  {"fieldname":"payment_reference","fieldtype":"Data","label":"Payment Reference"}
  ],
  "index_web_pages_for_search": 1,
  "module": "Omnexa Consumer Finance",

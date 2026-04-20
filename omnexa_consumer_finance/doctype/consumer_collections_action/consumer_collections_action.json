@@ -5,17 +5,25 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "identity_section",
   "case_id",
+  "action_section",
   "action_type",
   "action_channel",
   "action_status",
+  "control_section",
+  "action_owner",
   "notes"
  ],
  "fields": [
+  {"fieldname":"identity_section","fieldtype":"Section Break","label":"Action Identity"},
   {"fieldname":"case_id","fieldtype":"Link","label":"Case ID","options":"Consumer Finance Case","reqd":1},
+  {"fieldname":"action_section","fieldtype":"Section Break","label":"Action Details"},
   {"fieldname":"action_type","fieldtype":"Select","label":"Action Type","options":"REMINDER_CALL\nSMS_NOTICE\nFIELD_VISIT\nLEGAL_NOTICE\nRESTRUCTURE_OFFER","reqd":1},
   {"fieldname":"action_channel","fieldtype":"Select","label":"Action Channel","options":"CALL_CENTER\nSMS\nMOBILE_APP\nBRANCH\nLEGAL","reqd":1},
   {"fieldname":"action_status","fieldtype":"Select","label":"Action Status","options":"PENDING\nDONE\nFAILED","default":"PENDING"},
+  {"fieldname":"control_section","fieldtype":"Section Break","label":"Control"},
+  {"fieldname":"action_owner","fieldtype":"Link","label":"Action Owner","options":"User"},
   {"fieldname":"notes","fieldtype":"Long Text","label":"Notes"}
  ],
  "index_web_pages_for_search": 1,
