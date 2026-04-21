@@ -1,234 +1,232 @@
 {
- "actions": [],
- "allow_rename": 1,
- "autoname": "hash",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "identity_section",
-  "customer_name",
-  "country_code",
-  "application_channel",
-  "financial_section",
-  "principal",
-  "existing_exposure",
-  "term_months",
-  "credit_score",
-  "dti_ratio",
-  "customer_segment",
-  "collection_stage",
-  "delinquency_days",
-  "forbearance_flag",
-  "lifecycle_stage",
-  "ifrs9_stage",
-  "decision_status",
-  "collections_strategy",
-  "risk_score",
-  "pricing_spread",
-  "disbursement_status",
-  "disbursement_date",
-  "governance_section",
-  "restructure_flag",
-  "restructure_reason",
-  "decision_reason_codes",
-  "required_controls",
-  "case_owner",
-  "control_section"
- ],
- "fields": [
-  {
-   "fieldname": "identity_section",
-   "fieldtype": "Section Break",
-   "label": "Case Identity"
-  },
-  {
-   "fieldname": "customer_name",
-   "fieldtype": "Data",
-   "label": "Customer Name",
-   "reqd": 1,
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "country_code",
-   "fieldtype": "Data",
-   "label": "Country Code",
-   "in_list_view": 1,
-   "default": "INTL"
-  },
-  {
-   "fieldname": "application_channel",
-   "fieldtype": "Select",
-   "label": "Application Channel",
-   "options": "WEB\nMOBILE\nBRANCH",
-   "default": "BRANCH"
-  },
-  {
-   "fieldname": "financial_section",
-   "fieldtype": "Section Break",
-   "label": "Financial and Risk"
-  },
-  {
-   "fieldname": "principal",
-   "fieldtype": "Currency",
-   "label": "Principal",
-   "reqd": 1,
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "existing_exposure",
-   "fieldtype": "Currency",
-   "label": "Existing Exposure",
-   "default": "0"
-  },
-  {
-   "fieldname": "term_months",
-   "fieldtype": "Int",
-   "label": "Term (Months)",
-   "reqd": 1,
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "credit_score",
-   "fieldtype": "Int",
-   "label": "Credit Score",
-   "default": "700"
-  },
-  {
-   "fieldname": "dti_ratio",
-   "fieldtype": "Percent",
-   "label": "DTI Ratio"
-  },
-  {
-   "fieldname": "customer_segment",
-   "fieldtype": "Select",
-   "label": "Customer Segment",
-   "options": "PREMIUM\nHIGH_RISK\nDIGITAL_MASS\nSTANDARD_MASS"
-  },
-  {
-   "fieldname": "collection_stage",
-   "fieldtype": "Select",
-   "label": "Collection Stage",
-   "options": "CURRENT\n30_DPD\n60_DPD\n90_DPD\nLOSS",
-   "default": "CURRENT"
-  },
-  {
-   "fieldname": "delinquency_days",
-   "fieldtype": "Int",
-   "label": "Delinquency Days",
-   "default": "0"
-  },
-  {
-   "fieldname": "forbearance_flag",
-   "fieldtype": "Check",
-   "label": "Forbearance Flag",
-   "default": "0"
-  },
-  {
-   "fieldname": "lifecycle_stage",
-   "fieldtype": "Select",
-   "label": "Lifecycle Stage",
-   "options": "ORIGINATION\nAPPROVAL\nSERVICING\nWATCHLIST",
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "ifrs9_stage",
-   "fieldtype": "Select",
-   "label": "IFRS9 Stage",
-   "options": "STAGE_1\nSTAGE_2\nSTAGE_3",
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "decision_status",
-   "fieldtype": "Select",
-   "label": "Decision Status",
-   "options": "APPROVED\nREVIEW\nWATCHLIST\nREJECTED",
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "collections_strategy",
-   "fieldtype": "Select",
-   "label": "Collections Strategy",
-   "options": "LIGHT_TOUCH\nPREVENTIVE_OUTREACH\nSTRUCTURED_COLLECTIONS\nINTENSIVE_RECOVERY"
-  },
-  {
-   "fieldname": "risk_score",
-   "fieldtype": "Float",
-   "label": "Risk Score",
-   "precision": "6"
-  },
-  {
-   "fieldname": "pricing_spread",
-   "fieldtype": "Percent",
-   "label": "Pricing Spread"
-  },
-  {
-   "fieldname": "disbursement_status",
-   "fieldtype": "Select",
-   "label": "Disbursement Status",
-   "options": "PENDING\nDISBURSED\nCANCELLED",
-   "default": "PENDING"
-  },
-  {
-   "fieldname": "disbursement_date",
-   "fieldtype": "Date",
-   "label": "Disbursement Date"
-  },
-  {
-   "fieldname": "governance_section",
-   "fieldtype": "Section Break",
-   "label": "Governance and Controls"
-  },
-  {
-   "fieldname": "restructure_flag",
-   "fieldtype": "Check",
-   "label": "Restructure Flag",
-   "default": "0"
-  },
-  {
-   "fieldname": "restructure_reason",
-   "fieldtype": "Small Text",
-   "label": "Restructure Reason"
-  },
-  {
-   "fieldname": "decision_reason_codes",
-   "fieldtype": "Small Text",
-   "label": "Decision Reason Codes"
-  },
-  {
-   "fieldname": "required_controls",
-   "fieldtype": "Long Text",
-   "label": "Required Controls"
-  },
-  {
-   "fieldname": "case_owner",
-   "fieldtype": "Link",
-   "label": "Case Owner",
-   "options": "User"
-  },
-  {
-   "fieldname": "control_section",
-   "fieldtype": "Section Break",
-   "label": "Control"
-  }
- ],
- "index_web_pages_for_search": 1,
- "module": "Omnexa Consumer Finance",
- "name": "Consumer Finance Case",
- "permissions": [
-  {
-   "role": "System Manager",
-   "read": 1,
-   "write": 1,
-   "create": 1,
-   "delete": 1,
-   "print": 1,
-   "email": 1,
-   "export": 1,
-   "report": 1,
-   "share": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "track_changes": 1
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "hash",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"customer_name",
+		"country_code",
+		"application_channel",
+		"financial_section",
+		"principal",
+		"existing_exposure",
+		"term_months",
+		"credit_score",
+		"dti_ratio",
+		"column_break_omnexa_1",
+		"customer_segment",
+		"collection_stage",
+		"delinquency_days",
+		"forbearance_flag",
+		"lifecycle_stage",
+		"ifrs9_stage",
+		"column_break_omnexa_2",
+		"decision_status",
+		"collections_strategy",
+		"risk_score",
+		"pricing_spread",
+		"disbursement_status",
+		"disbursement_date",
+		"governance_section",
+		"restructure_flag",
+		"restructure_reason",
+		"decision_reason_codes",
+		"required_controls",
+		"case_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "customer_name",
+			"fieldtype": "Data",
+			"label": "Customer Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "country_code",
+			"fieldtype": "Data",
+			"label": "Country Code",
+			"in_list_view": 1,
+			"default": "INTL"
+		},
+		{
+			"fieldname": "application_channel",
+			"fieldtype": "Select",
+			"label": "Application Channel",
+			"options": "WEB\nMOBILE\nBRANCH",
+			"default": "BRANCH"
+		},
+		{
+			"fieldname": "financial_section",
+			"fieldtype": "Section Break",
+			"label": "Financial and Risk"
+		},
+		{
+			"fieldname": "principal",
+			"fieldtype": "Currency",
+			"label": "Principal",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "existing_exposure",
+			"fieldtype": "Currency",
+			"label": "Existing Exposure",
+			"default": "0"
+		},
+		{
+			"fieldname": "term_months",
+			"fieldtype": "Int",
+			"label": "Term (Months)",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "credit_score",
+			"fieldtype": "Int",
+			"label": "Credit Score",
+			"default": "700"
+		},
+		{
+			"fieldname": "dti_ratio",
+			"fieldtype": "Percent",
+			"label": "DTI Ratio"
+		},
+		{
+			"fieldname": "customer_segment",
+			"fieldtype": "Select",
+			"label": "Customer Segment",
+			"options": "PREMIUM\nHIGH_RISK\nDIGITAL_MASS\nSTANDARD_MASS"
+		},
+		{
+			"fieldname": "collection_stage",
+			"fieldtype": "Select",
+			"label": "Collection Stage",
+			"options": "CURRENT\n30_DPD\n60_DPD\n90_DPD\nLOSS",
+			"default": "CURRENT"
+		},
+		{
+			"fieldname": "delinquency_days",
+			"fieldtype": "Int",
+			"label": "Delinquency Days",
+			"default": "0"
+		},
+		{
+			"fieldname": "forbearance_flag",
+			"fieldtype": "Check",
+			"label": "Forbearance Flag",
+			"default": "0"
+		},
+		{
+			"fieldname": "lifecycle_stage",
+			"fieldtype": "Select",
+			"label": "Lifecycle Stage",
+			"options": "ORIGINATION\nAPPROVAL\nSERVICING\nWATCHLIST",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "ifrs9_stage",
+			"fieldtype": "Select",
+			"label": "IFRS9 Stage",
+			"options": "STAGE_1\nSTAGE_2\nSTAGE_3",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "decision_status",
+			"fieldtype": "Select",
+			"label": "Decision Status",
+			"options": "APPROVED\nREVIEW\nWATCHLIST\nREJECTED",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "collections_strategy",
+			"fieldtype": "Select",
+			"label": "Collections Strategy",
+			"options": "LIGHT_TOUCH\nPREVENTIVE_OUTREACH\nSTRUCTURED_COLLECTIONS\nINTENSIVE_RECOVERY"
+		},
+		{
+			"fieldname": "risk_score",
+			"fieldtype": "Float",
+			"label": "Risk Score",
+			"precision": "6"
+		},
+		{
+			"fieldname": "pricing_spread",
+			"fieldtype": "Percent",
+			"label": "Pricing Spread"
+		},
+		{
+			"fieldname": "disbursement_status",
+			"fieldtype": "Select",
+			"label": "Disbursement Status",
+			"options": "PENDING\nDISBURSED\nCANCELLED",
+			"default": "PENDING"
+		},
+		{
+			"fieldname": "disbursement_date",
+			"fieldtype": "Date",
+			"label": "Disbursement Date"
+		},
+		{
+			"fieldname": "governance_section",
+			"fieldtype": "Section Break",
+			"label": "Governance and Controls"
+		},
+		{
+			"fieldname": "restructure_flag",
+			"fieldtype": "Check",
+			"label": "Restructure Flag",
+			"default": "0"
+		},
+		{
+			"fieldname": "restructure_reason",
+			"fieldtype": "Small Text",
+			"label": "Restructure Reason"
+		},
+		{
+			"fieldname": "decision_reason_codes",
+			"fieldtype": "Small Text",
+			"label": "Decision Reason Codes"
+		},
+		{
+			"fieldname": "required_controls",
+			"fieldtype": "Long Text",
+			"label": "Required Controls"
+		},
+		{
+			"fieldname": "case_owner",
+			"fieldtype": "Link",
+			"label": "Case Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"index_web_pages_for_search": 1,
+	"module": "Omnexa Consumer Finance",
+	"name": "Consumer Finance Case",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"track_changes": 1
 }
