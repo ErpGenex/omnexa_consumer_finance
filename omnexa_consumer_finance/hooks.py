@@ -1,8 +1,8 @@
 app_name = "omnexa_consumer_finance"
 app_title = "ErpGenEx — Consumer Finance"
-app_publisher = "Omnexa"
+app_publisher = "ErpGenEx"
 app_description = "Consumer finance vertical"
-app_email = "dev@omnexa.com"
+app_email = "dev@erpgenex.com"
 app_license = "mit"
 
 # Apps
