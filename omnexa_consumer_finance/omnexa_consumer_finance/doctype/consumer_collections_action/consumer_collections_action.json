@@ -1,0 +1,82 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "hash",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"case_id",
+		"action_section",
+		"action_type",
+		"action_channel",
+		"action_status",
+		"action_owner",
+		"notes"
+	],
+	"fields": [
+		{
+			"fieldname": "case_id",
+			"fieldtype": "Link",
+			"label": "Case ID",
+			"options": "Consumer Finance Case",
+			"reqd": 1
+		},
+		{
+			"fieldname": "action_section",
+			"fieldtype": "Section Break",
+			"label": "Action Details"
+		},
+		{
+			"fieldname": "action_type",
+			"fieldtype": "Select",
+			"label": "Action Type",
+			"options": "REMINDER_CALL\nSMS_NOTICE\nFIELD_VISIT\nLEGAL_NOTICE\nRESTRUCTURE_OFFER",
+			"reqd": 1
+		},
+		{
+			"fieldname": "action_channel",
+			"fieldtype": "Select",
+			"label": "Action Channel",
+			"options": "CALL_CENTER\nSMS\nMOBILE_APP\nBRANCH\nLEGAL",
+			"reqd": 1
+		},
+		{
+			"fieldname": "action_status",
+			"fieldtype": "Select",
+			"label": "Action Status",
+			"options": "PENDING\nDONE\nFAILED",
+			"default": "PENDING"
+		},
+		{
+			"fieldname": "action_owner",
+			"fieldtype": "Link",
+			"label": "Action Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Long Text",
+			"label": "Notes"
+		}
+	],
+	"index_web_pages_for_search": 1,
+	"module": "Omnexa Consumer Finance",
+	"name": "Consumer Collections Action",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"track_changes": 1
+}
