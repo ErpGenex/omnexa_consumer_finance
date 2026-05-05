@@ -5,9 +5,11 @@
 	"doctype": "DocType",
 	"engine": "InnoDB",
 	"field_order": [
+		"tab_break_overview",
 		"customer_name",
 		"country_code",
 		"application_channel",
+		"tab_break_1",
 		"financial_section",
 		"principal",
 		"existing_exposure",
@@ -28,6 +30,7 @@
 		"pricing_spread",
 		"disbursement_status",
 		"disbursement_date",
+		"tab_break_2",
 		"governance_section",
 		"restructure_flag",
 		"restructure_reason",
@@ -36,6 +39,21 @@
 		"case_owner"
 	],
 	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "tab_break_2",
+			"fieldtype": "Tab Break",
+			"label": "Further"
+		},
 		{
 			"fieldname": "customer_name",
 			"fieldtype": "Data",

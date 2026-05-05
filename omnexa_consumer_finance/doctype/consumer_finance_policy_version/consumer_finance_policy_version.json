@@ -5,9 +5,11 @@
 	"doctype": "DocType",
 	"engine": "InnoDB",
 	"field_order": [
+		"tab_break_overview",
 		"policy_name",
 		"policy_version",
 		"status",
+		"tab_break_1",
 		"approval_section",
 		"maker",
 		"checker",
@@ -23,6 +25,16 @@
 		"change_ticket"
 	],
 	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
 		{
 			"fieldname": "policy_name",
 			"fieldtype": "Data",
